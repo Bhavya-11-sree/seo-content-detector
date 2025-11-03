@@ -1,0 +1,11 @@
+streamlit
+pandas
+scikit-learn
+beautifulsoup4
+requests
+textstat
+nltk
+joblib
+numpy
+gensim
+matplotlib
