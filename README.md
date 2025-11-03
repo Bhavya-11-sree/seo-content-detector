@@ -1,5 +1,4 @@
-# seo-content-detector
-Sure! Here’s a clean, professional README.md you can directly copy and paste into your GitHub repository for your SEO Content Quality & Duplicate Detector project.
+
 
 # 🚀 SEO Content Quality & Duplicate Detector
 
