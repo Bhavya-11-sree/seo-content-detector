@@ -10,18 +10,18 @@ from sklearn.metrics.pairwise import cosine_similarity
 from textstat import flesch_reading_ease
 import numpy as np
 import matplotlib.pyplot as plt
-
-# ✅ Download NLTK resources
-nltk.download('punkt', quiet=True)
-
-# ✅ Load Pretrained Model & Vectorizer
 import os
 
-BASE_DIR = os.path.dirname(__file__)  # current folder (streamlit_app)
+# ✅ Download NLTK resources (fixes LookupError)
+nltk.download('punkt', quiet=True)
+nltk.download('punkt_tab', quiet=True)
 
+# ✅ Load Pretrained Model & Data
+BASE_DIR = os.path.dirname(__file__)
 model = joblib.load(os.path.join(BASE_DIR, "model", "quality_model.pkl"))
 vectorizer = joblib.load(os.path.join(BASE_DIR, "model", "vectorizer.pkl"))
 dataset = pd.read_csv(os.path.join(BASE_DIR, "featured.csv"))
+
   # Contains previous URLs & text data
 
 # ✅ Function to extract webpage content
@@ -135,6 +135,7 @@ if st.button("🚀 Analyze"):
 
     else:
         st.warning("⚠ Enter a valid URL")
+
 
 
 
