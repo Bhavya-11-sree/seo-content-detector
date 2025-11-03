@@ -60,7 +60,7 @@ https://example.com
 streamlit run app.py
 
 
-If deployed online, include URL here:
+Deployed URL link:
 🔗 Live Demo: https://seo-content-detector-6b8mypqfzxfcmsrfkcugrw.streamlit.app/
 
 💡 Key Decisions
