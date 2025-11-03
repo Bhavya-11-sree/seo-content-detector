@@ -15,9 +15,14 @@ import matplotlib.pyplot as plt
 nltk.download('punkt', quiet=True)
 
 # ✅ Load Pretrained Model & Vectorizer
-model = joblib.load("C:/Users/bhavy/Downloads/seo-content-detector/streamlit_app/model/quality_model.pkl")          # Your saved ML model
-vectorizer = joblib.load("C:/Users/bhavy/Downloads/seo-content-detector/streamlit_app/model/vectorizer.pkl")  # TF-IDF vectorizer
-dataset = pd.read_csv("C:/Users/bhavy/Downloads/seo-content-detector/streamlit_app/featured.csv")  # Contains previous URLs & text data
+import os
+
+BASE_DIR = os.path.dirname(__file__)  # current folder (streamlit_app)
+
+model = joblib.load(os.path.join(BASE_DIR, "model", "quality_model.pkl"))
+vectorizer = joblib.load(os.path.join(BASE_DIR, "model", "vectorizer.pkl"))
+dataset = pd.read_csv(os.path.join(BASE_DIR, "featured.csv"))
+  # Contains previous URLs & text data
 
 # ✅ Function to extract webpage content
 def extract_content(url):
@@ -130,6 +135,7 @@ if st.button("🚀 Analyze"):
 
     else:
         st.warning("⚠ Enter a valid URL")
+
 
 
 
