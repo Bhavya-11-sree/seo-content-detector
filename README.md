@@ -40,7 +40,7 @@ seo-content-detector/
 ## ⚙️ Setup Instructions
 
 
-git clone https://github.com/yourusername/seo-content-detector
+git clone https://github.com/Bhavya-11-sree/seo-content-detector
 cd seo-content-detector
 pip install -r requirements.txt
 jupyter notebook notebooks/seo_pipeline.ipynb
