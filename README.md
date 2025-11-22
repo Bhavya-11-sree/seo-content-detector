@@ -18,24 +18,6 @@ A lightweight yet powerful tool that analyzes website content for SEO quality, r
 
 ---
 
-## 📂 Project Structure
-
-
-
-seo-content-detector/
-│── notebooks/
-│ └── seo_pipeline.ipynb
-│── app.py # Streamlit app (optional)
-│── data/
-│ ├── input_urls.csv
-│ └── output_results.csv
-│── models/
-│ └── quality_model.pkl
-│── requirements.txt
-│── README.md
-
-
----
 
 ## ⚙️ Setup Instructions
 
